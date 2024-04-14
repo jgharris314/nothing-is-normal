@@ -31,3 +31,48 @@ body {
     text-wrap: balance;
   }
 }
+
+.split-bg {
+  background: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    white 50%,
+    white 100%
+  );
+}
+
+.scroll-content {
+  /* 165deg = 180deg - 15deg   */
+  background: linear-gradient(
+    to top,
+    black 0%,
+    black 50%,
+    white 50%,
+    white 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.black-square {
+  width: 140px;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.white-square {
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: black;
+  background-color: white;
+  width: 140px;
+  text-align: center;
+}
