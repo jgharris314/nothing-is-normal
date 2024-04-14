@@ -34,8 +34,6 @@ export default function Member({
   memberKey,
 }: {
   memberKey: keyof typeof memberInfo
-  displayDetails: MemberName
-  setDisplayDetails: React.Dispatch<React.SetStateAction<MemberName>>
 }) {
   const info = memberInfo[memberKey]
 
@@ -52,6 +50,11 @@ export default function Member({
       onClick={() => handlClick()}
       style={{ "--image-url": `url(${info.imgSrc})` }}
       className={`relative bg-[image:var(--image-url)] bg-cover bg-no-repeat ${
+        memberKey === "jake" && "md:bg-[left_calc(60%)_top_calc(0%)]"
+      }
+      ${memberKey === "lane" && "md:bg-[left_calc(15%)_top_calc(0%)]"}
+    
+      ${
         displayDetails &&
         "before:content-[''] before:absolute before:inset-0 before:block before:bg-gradient-to-b before:from-black/85 before:to-black/85"
       }`}
