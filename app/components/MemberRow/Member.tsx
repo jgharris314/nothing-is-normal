@@ -48,6 +48,7 @@ export default function Member({
     <div
       role="button"
       onClick={() => handlClick()}
+      //@ts-ignore
       style={{ "--image-url": `url(${info.imgSrc})` }}
       className={`relative bg-[image:var(--image-url)] bg-cover bg-no-repeat ${
         memberKey === "jake" && "md:bg-[left_calc(60%)_top_calc(0%)]"
