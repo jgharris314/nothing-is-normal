@@ -14,7 +14,7 @@ const memberInfo: Record<MemberName, any> = {
   lane: {
     imgSrc: "/laneNisN.jpg",
     details: {
-      role: "Vocals, Keys",
+      role: "Vocals, Keys, Guitar",
       hobbies: "bustin kenflips on fools",
       bio: "yarp",
     },
