@@ -1,13 +1,13 @@
-import { ParentalIsNoraml } from "./components/ParentalAdvisoryLogo"
-import MemberRow from "./components/MemberRow"
+import Nav from "./components/Nav"
+import HomeSection from "./components/sections/Home"
+import MembersSection from "./components/sections/Members"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col uppercase bg-slate-900 overflow-hidden px-10 pb-32">
-      <div className="flex w-full items-center justify-center my-8">
-        <ParentalIsNoraml />
-      </div>
-      <MemberRow />
+    <main className="flex flex-col w-full items-center bg-black overflow-hidden pb-32">
+      <Nav />
+      <HomeSection />
+      <MembersSection />
     </main>
   )
 }
