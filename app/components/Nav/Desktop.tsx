@@ -22,7 +22,7 @@ export default function DesktopNav() {
             return (
               <li
                 key={uuidv4()}
-                className="border-r-2 border-white last:border-none w-full pr-4"
+                className="border-r-2 border-white last:border-none w-full pr-4 text-center"
               >
                 <a
                   className="capitalize text-[20px] font-semibold hover:border-b-4 hover:border-red-700 pb-2 text-white whitespace-nowrap"
